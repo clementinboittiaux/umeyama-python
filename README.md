@@ -8,7 +8,8 @@ Notations in the code are consistent with the paper.
 
 ## Usage
 Let `X` and `Y` be 3D numpy arrays with shape ($m$, $n$) and consistent indexes.  
-```c, R, t = umeyama(X, Y)``` returns `c`, `R` and `t` such as Y ~ ```c * R @ X + t```.
+Import `umeyama` function from [umeyama.py](umeyama.py).  
+Then ```c, R, t = umeyama(X, Y)``` returns `c`, `R` and `t` such as Y ~ ```c * R @ X + t```.
 
 ## Example
 We provide an example in the IPython notebook [example.ipynb](example.ipynb).
