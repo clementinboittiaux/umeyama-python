@@ -10,10 +10,11 @@ def umeyama(X, Y):
     Parameters
     ----------
     X : numpy.array
-        (m, n) shaped numpy array. m is the dimension of points of the
-        point set, n is the number of points in the point set.
+        (m, n) shaped numpy array. m is the dimension of the points,
+        n is the number of points in the point set.
     Y : numpy.array
         (m, n) shaped numpy array. Indexes should be consistent with `X`.
+        That is, Y[i] must be the point corresponding to X[i].
     
     Returns
     -------

@@ -7,9 +7,12 @@ More specifically, we want to find *[c, R, t] ∈ Sim(3)* given the minimum valu
 Notations in the code are consistent with the paper.
 
 ## Usage
-Let `X` and `Y` be 3D numpy arrays with shape (m, n) and consistent indexes.  
-First, import `umeyama` function from [umeyama.py](umeyama.py).  
-Then ```c, R, t = umeyama(X, Y)``` returns `c`, `R` and `t` such as Y ~ ```c * R @ X + t```.
+Let `X` and `Y` be 3D numpy arrays with shape *(m, n)* where *m* is the dimension of the points and *n* is the number of points in the point set. Let `X` and `Y` have consistent indexes, that is, `Y[i]` must be the *m*-dimensional point corresponding to `X[i]`.
+```python
+from umeyama import umeyama
+c, R, t = umeyama(X, Y)
+```
+The function returns `c`, `R` and `t` such as Y ~ ```c * R @ X + t```.
 
 ## Example
 We provide an example in the IPython notebook [example.ipynb](example.ipynb).
