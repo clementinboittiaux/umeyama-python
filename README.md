@@ -12,7 +12,7 @@ Let `X` and `Y` be 3D numpy arrays with shape (*m*, *n*) where *m* is the dimens
 from umeyama import umeyama
 c, R, t = umeyama(X, Y)
 ```
-The function returns `c`, `R` and `t` such as Y ~ ```c * R @ X + t```.
+The function returns `c`, `R` and `t` such as `Y` ~ ```c * R @ X + t```.
 
 ## Example
 We provide an example in the IPython notebook [example.ipynb](example.ipynb).
