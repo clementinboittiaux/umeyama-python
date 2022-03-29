@@ -7,7 +7,7 @@ More specifically, we want to find [*c*, **R**, **t**] ∈ Sim(3) given the mini
 Notations in the code are consistent with the paper.
 
 ## Usage
-Let `X` and `Y` be 3D numpy arrays with shape (*m*, *n*) where *m* is the dimension of the points and *n* is the number of points in the point set. Let `X` and `Y` have consistent indexes, that is, `Y[i]` must be the *m*-dimensional point corresponding to `X[i]`.
+Let `X` and `Y` be 3D numpy arrays with shape (*m*, *n*) where *m* is the dimension of the points and *n* is the number of points in the point set. Let `X` and `Y` have consistent indexes, that is, `Y[:, i]` must be the *m*-dimensional point corresponding to `X[:, i]`.
 ```python
 from umeyama import umeyama
 c, R, t = umeyama(X, Y)
