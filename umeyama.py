@@ -14,7 +14,7 @@ def umeyama(X, Y):
         n is the number of points in the point set.
     Y : numpy.array
         (m, n) shaped numpy array. Indexes should be consistent with `X`.
-        That is, Y[i] must be the point corresponding to X[i].
+        That is, Y[:, i] must be the point corresponding to X[:, i].
     
     Returns
     -------
